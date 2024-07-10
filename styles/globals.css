@@ -1,0 +1,362 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* styles/globals.css */
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #333;
+}
+
+header {
+  background: white;
+  color: #333;
+  padding: 10px 0;
+  border-bottom: 2px solid #00aaff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold; /* Более толстый шрифт */
+}
+
+nav ul li a:hover {
+  color: #005f7f;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background: white;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #00aaff;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown li {
+  margin: 5px 0;
+}
+
+.dropdown li a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  color: #005f7f;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.slider {
+  margin: 20px 0;
+}
+
+.slick-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-around; /* Равномерное распределение по горизонтали */
+  gap: 20px; /* Промежуток между секциями */
+}
+
+.section {
+  flex: 1; /* Равномерное распределение ширины между секциями */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.section p {
+  color: #666;
+  line-height: 1.6; /* Увеличиваем межстрочный интервал для лучшей читаемости текста */
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #007bff; /* Цвет фона - синий */
+  color: #fff; /* Цвет текста - белый */
+  border-radius: 10px; /* Закругление углов блока */
+  margin-bottom: 20px; /* Отступ снизу блока */
+}
+
+.welcome-section h2 {
+  font-size: 32px; /* Размер заголовка */
+  font-weight: bold; /* Жирный шрифт для заголовка */
+  margin-bottom: 15px; /* Отступ снизу заголовка */
+}
+
+.welcome-section p {
+  font-size: 18px; /* Размер текста */
+  line-height: 1.6; /* Межстрочный интервал */
+}
+
+.abiturient-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff; /* Цвет фона кнопки - белый */
+  color: #007bff; /* Цвет текста кнопки - синий */
+  text-decoration: none;
+  border-radius: 5px; /* Закругление углов кнопки */
+  margin-top: 20px; /* Отступ сверху кнопки */
+  transition: background-color 0.3s, color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.abiturient-link:hover {
+  background-color: #0056b3; /* Изменение цвета фона при наведении */
+  color: #fff; /* Изменение цвета текста при наведении */
+}
+
+
+.founder-section {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.founder-section img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.founder-section div {
+  flex: 1;
+}
+
+.founder-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.founder-section p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.news-section {
+  margin: 40px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.news-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.news-item {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+}
+
+.news-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.news-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+.staff-section {
+  margin: 40px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.staff-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.staff-section p {
+  font-size: 18px;
+  color: #666;
+}
+
+.btn-details {
+  display: inline-block;
+  background-color: #00aaff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-details:hover {
+  background-color: #005f7f;
+}
+
+.facilities-section {
+  margin: 40px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.facilities-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.facilities-section p {
+  font-size: 18px;
+  color: #666;
+}
+
+.partners-section {
+  margin: 40px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.partners-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap; /* Добавляем обертку, чтобы логотипы переносились на новую строку при необходимости */
+  justify-content: center; /* Центрируем логотипы по горизонтали */
+  align-items: center; /* Выравниваем по центру по вертикали */
+  margin-top: 20px;
+}
+
+.partner-logo {
+  width: 200px; /* Изменяем размер логотипов, если нужно */
+  height: auto;
+  margin: 10px; /* Увеличиваем отступы между логотипами */
+}
+
+.contacts-section {
+  margin: 40px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.contacts-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contacts-info {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.section.with-photo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-content {
+  flex: 1;
+}
+
+.section-photo {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.section-photo img {
+  max-width: 100%; /* Размер фотографии по ширине блока */
+  border-radius: 10px; /* Закругление углов фотографии */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для фотографии */
+}
+
+.section-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.section-content p {
+  color: #666;
+  line-height: 1.6;
+}
