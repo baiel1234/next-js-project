@@ -1,4 +1,3 @@
-// components/Header.js
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -16,16 +15,15 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <ul>
+        <ul className="nav-list">
           <li className="logo">
-            <img src="/logo.png" alt="Салымбеков университет" />
-            <Link href="/"></Link>
+            <Link href="/"><img src="/logo.png" alt="Салымбеков университет" /></Link>
           </li>
           <li
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={handleMouseLeave}
           >
-            <Link href="/university">Университет</Link>
+            <Link href="">Университет</Link>
             {dropdown === 1 && (
               <ul className="dropdown">
                 <li><Link href="/university/about">О университете</Link></li>
@@ -38,7 +36,7 @@ const Header = () => {
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={handleMouseLeave}
           >
-            <Link href="/education">Образование</Link>
+            <Link href="">Образование</Link>
             {dropdown === 2 && (
               <ul className="dropdown">
                 <li><Link href="/education/programs">Программы</Link></li>
@@ -51,7 +49,7 @@ const Header = () => {
             onMouseEnter={() => handleMouseEnter(3)}
             onMouseLeave={handleMouseLeave}
           >
-            <Link href="/clinical-base">Клиническая база</Link>
+            <Link href="">Клиническая база</Link>
             {dropdown === 3 && (
               <ul className="dropdown">
                 <li><Link href="/clinical-base/hospitals">Больницы</Link></li>
@@ -63,7 +61,7 @@ const Header = () => {
             onMouseEnter={() => handleMouseEnter(4)}
             onMouseLeave={handleMouseLeave}
           >
-            <Link href="/science">Наука</Link>
+            <Link href="">Наука</Link>
             {dropdown === 4 && (
               <ul className="dropdown">
                 <li><Link href="/science/research">Исследования</Link></li>
@@ -75,7 +73,7 @@ const Header = () => {
             onMouseEnter={() => handleMouseEnter(5)}
             onMouseLeave={handleMouseLeave}
           >
-            <Link href="/student">Студенту</Link>
+            <Link href="">Студенту</Link>
             {dropdown === 5 && (
               <ul className="dropdown">
                 <li><Link href="/student/services">Сервисы</Link></li>
@@ -87,7 +85,7 @@ const Header = () => {
             onMouseEnter={() => handleMouseEnter(6)}
             onMouseLeave={handleMouseLeave}
           >
-            <Link href="/applicant">Абитуриенту</Link>
+            <Link href="">Абитуриенту</Link>
             {dropdown === 6 && (
               <ul className="dropdown">
                 <li><Link href="/applicant/info">Информация для абитуриентов</Link></li>
@@ -99,7 +97,7 @@ const Header = () => {
             onMouseEnter={() => handleMouseEnter(7)}
             onMouseLeave={handleMouseLeave}
           >
-            <Link href="/charity">Благотворительность</Link>
+            <Link href="">Благотворительность</Link>
             {dropdown === 7 && (
               <ul className="dropdown">
                 <li><Link href="/charity/projects">Проекты</Link></li>

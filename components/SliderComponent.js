@@ -17,13 +17,13 @@ const SliderComponent = () => {
     <div className="slider">
       <Slider {...settings}>
         <div>
-          <img src="https://salymbekov.com/wp-content/uploads/2023/02/bc0b2014-1920x1008.jpg" alt="Slide 1" />
+          <img src="/photo1.png" alt="Slide 1" />
         </div>
         <div>
-          <img src="https://salymbekov.com/wp-content/uploads/2023/02/bc0b2640-1920x1008.jpg" alt="Slide 2" />
+          <img src="/photo2.png" alt="Slide 2" />
         </div>
         <div>
-          <img src="https://salymbekov.com/wp-content/uploads/2023/02/bc0b3447.jpg" alt="Slide 3" />
+          <img src="/photo3.png" alt="Slide 3" />
         </div>
       </Slider>
     </div>

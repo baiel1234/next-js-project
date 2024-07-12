@@ -1,6 +1,7 @@
 // pages/index.js
 import Header from '../components/Header';
 import SliderComponent from '../components/SliderComponent';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -96,6 +97,11 @@ export default function Home() {
           Бишкек, Кыргызстан</p>
         </div>
       </div>
+      <Footer />
     </div>
   );
-}
+};
+
+
+
+
